@@ -9,12 +9,17 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true); // Set dark mode as default
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     document.documentElement.classList.toggle('dark');
   };
+
+  // Initialize dark mode
+  React.useEffect(() => {
+    document.documentElement.classList.add('dark');
+  }, []);
 
   return (
     <Router>

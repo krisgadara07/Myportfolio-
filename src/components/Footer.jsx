@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/Kris-gadara"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-accent hover:bg-accent-foreground hover:text-accent transition-colors"
@@ -16,7 +16,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.comwww.linkedin.com/in/kris-gadara-1580b9343"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-accent hover:bg-accent-foreground hover:text-accent transition-colors"

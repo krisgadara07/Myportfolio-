@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Github as GitHub, Linkedin, Mail, Code, Briefcase, GraduationCap, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import myImage from "../images/myimg.jpg";
 
 const Home = () => {
   const stats = [
@@ -24,13 +25,13 @@ const Home = () => {
           <img
             src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
             alt="Background"
-            className="w-full h-full object-cover opacity-10"
+            className="w-full h-full object-cover opacity-60"
           />
         </div>
         
         <div className="container mx-auto px-4 z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 1, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center"
@@ -42,11 +43,11 @@ const Home = () => {
                 transition={{ duration: 0.5 }}
                 className="relative w-32 h-32 mx-auto mb-6"
               >
-                <img
-                  src="/kris.jpg"
-                  alt="Kris Gadara"
-                  className="w-full h-full rounded-full object-cover border-4 border-primary shadow-xl"
-                />
+              <img
+                src={myImage}
+                alt="Kris Gadara"
+                className="w-full h-full rounded-full object-cover border-4 border-primary shadow-xl"
+              />
                 <div className="absolute inset-0 rounded-full bg-primary/20 animate-pulse"></div>
               </motion.div>
               <motion.h1
@@ -63,7 +64,7 @@ const Home = () => {
                 transition={{ delay: 0.4 }}
                 className="text-xl md:text-2xl text-muted-foreground mb-8"
               >
-                Web Developer & Tech Enthusiast
+                Web Developer &  Flutter Developer
               </motion.p>
             </div>
 
@@ -74,7 +75,7 @@ const Home = () => {
               className="flex justify-center space-x-4 mb-12"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/Kris-gadara"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors"
@@ -82,7 +83,7 @@ const Home = () => {
                 <GitHub size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/kris-gadara-1580b9343"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-primary/20 hover:bg-primary/40 transition-colors"
